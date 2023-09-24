@@ -20,15 +20,15 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <body className={ cn(
-            font.className,
-            "bg-white dark:bg-[#313338] transition-colors duration-200"
+        <body className={cn(
+          font.className,
+          "bg-white dark:bg-[#313338]"
         )}>
-          <ThemeProvider 
+          <ThemeProvider
+            attribute="class"
             defaultTheme="dark"
             enableSystem={false}
-            attribute="class"
-            storageKey="dicord-theme"
+            storageKey="discord-theme"
           >
             {children}
           </ThemeProvider>
